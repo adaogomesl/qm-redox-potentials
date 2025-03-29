@@ -95,6 +95,12 @@ rm -r workflow*/*/*/failed/*.rwf
 ```
 ---
 
+## Check Normal termination calculations
+Check if calculations have Normal terminal and no negative frequencies.
+```
+sbatch check_log.sh workflow
+```
+---
 
 
 ## Extract Potentials
