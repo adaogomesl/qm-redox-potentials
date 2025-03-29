@@ -148,7 +148,7 @@ CSV details
 
 Usage
 ```
-python3 pred-exp-plot_T1Red.py
+python3 plot-s0-colormap.py
 ```
 
 Resulted plot
@@ -166,6 +166,5 @@ Usage
 ```
 python3 plot-scatter.py S1
 ```
-Resulted plot
 <img width="469" alt="Screenshot 2025-03-28 at 9 25 33 PM" src="https://github.com/user-attachments/assets/7f01c8d7-a19d-42e8-8e45-b0802c855d53" />
 
