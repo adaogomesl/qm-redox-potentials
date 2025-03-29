@@ -126,7 +126,7 @@ A CSV file will be generated with computed properties. Example of CSV is below:
 ```
 python3 prepare_results.py STATE+redox
 ```
-<img width="361" alt="Screenshot 2025-03-28 at 9 24 38 PM" src="https://github.com/user-attachments/assets/34f1a00c-20ad-4010-ad4b-e170ec838ca4" />
+<img width="461" alt="Screenshot 2025-03-28 at 9 24 38 PM" src="https://github.com/user-attachments/assets/34f1a00c-20ad-4010-ad4b-e170ec838ca4" />
 
 
 #### Plot Computation time and MAE
@@ -166,5 +166,5 @@ Usage
 python3 plot-scatter.py S1
 ```
 Resulted plot
-<img width="869" alt="Screenshot 2025-03-28 at 9 25 33 PM" src="https://github.com/user-attachments/assets/7f01c8d7-a19d-42e8-8e45-b0802c855d53" />
+<img width="469" alt="Screenshot 2025-03-28 at 9 25 33 PM" src="https://github.com/user-attachments/assets/7f01c8d7-a19d-42e8-8e45-b0802c855d53" />
 
