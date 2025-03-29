@@ -152,7 +152,8 @@ python3 pred-exp-plot_T1Red.py
 ```
 
 Resulted plot
-![plot_S0](https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/2a48e439-f486-4e13-8054-7ffd50c43fbd)
+<img width="467" alt="Screenshot 2025-03-28 at 9 32 50 PM" src="https://github.com/user-attachments/assets/f90dcf45-b93e-4bb5-8259-1e80b81636ca" />
+
 
 ### Excited State Potentials + ColorMap showing wavelength
 CSV details
