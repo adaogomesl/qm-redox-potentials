@@ -55,7 +55,7 @@ Below are the spacers and terminal on the shared pymolgen script, if you need to
 
 #### 1. Set up workflow: change XXX for the workflow name
    ```
-pyflow setup XXX --config_file verde-config.json
+pyflow setup XXX --config_file config.json
    ```
 
 #### 2. Copy molecules generated to unopt_pdbs directory inside the workflow folder 
@@ -78,6 +78,13 @@ pyflow progress
 If need to change jobs type, edit the config file. Details on the keywords on PyFlow GitHub: https://github.com/kuriba/PyFlow
 
 ---
+## Check failed calculations
+Check error message failed jobs on workflow and generate a csv with the informatiom
+```
+python3 check-error-message.py NAME-WORKFLOW
+```
+---
+
 ## Clean up workflow
 Remove temporary files for failed jobs, for completed jobs them are automatically deleted
 ```
@@ -87,6 +94,9 @@ rm -r workflow*/*/*/failed/*.chk
 rm -r workflow*/*/*/failed/*.rwf
 ```
 ---
+
+
+
 ## Extract Potentials
 #### 1. Copy extraction script to the same directory of the workflow directory - gather-results.py
 ```
