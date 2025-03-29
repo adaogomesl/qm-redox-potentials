@@ -73,9 +73,7 @@ pyflow begin --do_not_track flag
 #### 4. Check progress
    ```
 pyflow progress
-   ```
-
-If need to change jobs type, edit the config file. Details on the keywords on PyFlow GitHub: https://github.com/kuriba/PyFlow
+   ``` 
 ---
 
 ## Check Normal termination calculations
@@ -109,23 +107,40 @@ python3 failed-organize-resub.py NAME-WORKFLOW
 ---
 
 ## Extract Potentials
-#### 1. Copy extraction script to the same directory of the workflow directory - gather-results.py
-```
-cp /work/lopez/share_from_Leticia/verde-pyflow/gather-results.py .
-```
+1. Copy extraction script to the same directory of the workflow directory - gather-results.py
 
-#### 2. Extract the results - Replace workflow_name by the workflow directory name
+2. Extract the results - Replace workflow_name by the workflow directory name
 _Reminders: Request resources and have PyFlow environment sourced_
 ```
 python gather-results.py workflow_name
 ```
 
 A CSV file will be generated with computed properties. Example of CSV is below:
+<img width="644" alt="Screenshot 2025-03-28 at 9 18 16 PM" src="https://github.com/user-attachments/assets/8fff81bc-0f96-439a-8b5a-f40ebe994849" />
 
-<img width="1018" alt="Screenshot 2024-01-17 at 12 51 52 PM" src="https://github.com/Kimpton22/Tutorials-And-Guides/assets/100699955/a4b7a7ef-856f-46a4-b440-de139220a057">
 
 ---
 ## Generate plots
+### Compare predicted with experimental results
+#### MAE Scatter plot and extract MAE, Error and MSE
+```
+python3 prepare_results.py STATE+redox
+```
+<img width="361" alt="Screenshot 2025-03-28 at 9 24 38 PM" src="https://github.com/user-attachments/assets/34f1a00c-20ad-4010-ad4b-e170ec838ca4" />
+
+
+#### Plot Computation time and MAE
+```
+python3 plot_bar.py Title-freqtime.csv
+```
+<img width="556" alt="Screenshot 2025-03-28 at 9 30 45 PM" src="https://github.com/user-attachments/assets/c258572f-911c-4742-8af9-dc812475e486" />
+
+#### Compare Correlation between predicted values and experimental value 
+```
+python3 plot_bar.py Title-freqtime.csv
+```
+<img width="502" alt="Screenshot 2025-03-28 at 9 31 09 PM" src="https://github.com/user-attachments/assets/7c07e967-17b4-4ac0-81af-a246ba1bcc79" />
+
 ### S0 Potentials + ColorMap showing wavelength
 CSV details
   1. Need to be named S0.csv
@@ -133,7 +148,7 @@ CSV details
 
 Usage
 ```
-python3 plot-s0-colormap.py S0
+python3 pred-exp-plot_T1Red.py
 ```
 
 Resulted plot
@@ -151,4 +166,5 @@ Usage
 python3 plot-scatter.py S1
 ```
 Resulted plot
-![plot_S1](https://github.com/adaogomesl/Leticia-LopezLab/assets/100699955/91ecc5c8-9702-404a-8524-cc4ce6e13bf2)
+<img width="869" alt="Screenshot 2025-03-28 at 9 25 33 PM" src="https://github.com/user-attachments/assets/7f01c8d7-a19d-42e8-8e45-b0802c855d53" />
+
