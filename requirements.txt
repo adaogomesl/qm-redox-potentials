@@ -1,0 +1,9 @@
+pyflow
+workflowV2
+openbabel
+numpy
+pandas
+matplotlib
+scipy
+networkx
+rdkit
