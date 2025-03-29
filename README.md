@@ -17,21 +17,4 @@ Python code to automate quantum mechanical (QM) calculations, extract results, a
     - `networkx`  
     - `rdkit` (for molecular processing)  
 
-## Installation
-1. Clone this GitHub repository into your home directory on the cluster.
-	```console
-	git clone https://github.com/adaogomesl/qm-redox-potentials
-	```
-2. Go into the newly created `qm-redox-potentials` directory and set up an Anaconda environment using the provided environment.yml file.
-	```console
-    conda env create --file environment.yml
-	```
-3. Activate the newly created environment.
-	```console
-    conda activate qm-redox-potentials
-	```
-4.  Run the following setup command within the PyFlow directory.
-    ```console
-    pip install -r requirements.txt
-    
-5. If you intend to use GAMESS, create a directory called `scr` within your scratch directory.
+
