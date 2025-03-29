@@ -76,12 +76,12 @@ pyflow progress
    ```
 
 If need to change jobs type, edit the config file. Details on the keywords on PyFlow GitHub: https://github.com/kuriba/PyFlow
-
 ---
-## Check failed calculations
-Check error message failed jobs on workflow and generate a csv with the informatiom
+
+## Check Normal termination calculations
+Check if calculations have Normal terminal and no negative frequencies.
 ```
-python3 check-error-message.py NAME-WORKFLOW
+sbatch check_log.sh NAME-WORKFLOW
 ```
 ---
 
@@ -95,13 +95,18 @@ rm -r workflow*/*/*/failed/*.rwf
 ```
 ---
 
-## Check Normal termination calculations
-Check if calculations have Normal terminal and no negative frequencies.
+## Check failed calculations
+Check error message failed jobs on workflow and generate a csv with the information
 ```
-sbatch check_log.sh workflow
+python3 check-error-message.py NAME-WORKFLOW
 ```
 ---
-
+## Resubmit failed calculations
+The script will automatically configure resubmission files
+```
+python3 failed-organize-resub.py NAME-WORKFLOW
+```
+---
 
 ## Extract Potentials
 #### 1. Copy extraction script to the same directory of the workflow directory - gather-results.py
